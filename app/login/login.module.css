@@ -29,6 +29,7 @@
   font-size: 14px;
   margin-bottom: 2px;
   align-self: flex-start;
+  color: #000000;
 }
 
 .input {
@@ -45,6 +46,7 @@
   color: #8E8E93;
   font-size: 12px;
   height: auto;
+  width: 226px;
 }
 
 .checkbox {
@@ -52,6 +54,7 @@
   align-items: center;
   gap: 4px;
   color: #0070f3;
+  font-size: 12px;
 }
 
 .button {
@@ -68,10 +71,11 @@
 .links {
   margin-top: 8px;
   color: #8E8E93;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 
 .links a {
   color: #8E8E93;
+  text-decoration: underline;
 }
