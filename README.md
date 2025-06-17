@@ -21,9 +21,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Supabase Setup
-1. Copy `.env.example` to `.env` and add your Supabase URL and anon key.
-2. Run `npm install` to install dependencies.
-3. Start the dev server with `npm run dev`.
+1. Edit `.env` and add your Supabase URL and anon key.
+2. Add values for `NEXTAUTH_SECRET` and `NEXTAUTH_URL`.
+3. Run `npm install` to install dependencies.
+4. Start the dev server with `npm run dev`.
 
 
 ## Learn More
@@ -34,6 +35,10 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Authentication
+
+Use `/login` to sign in with your Supabase credentials and `/signup` to create a new account. Authentication is handled by **NextAuth.js** with Supabase as the backend.
 
 ## Deploy on Vercel
 
