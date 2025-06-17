@@ -30,7 +30,7 @@ export default function LoginPage() {
     <div className={styles.container}>
       <form onSubmit={handleSubmit} className={styles.form}>
         <img
-          src="/mfa-logo.svg"
+          src="/mfa-logo.png"
           alt="Manitoba Foundation for the Arts logo"
           className={styles.logo}
         />
