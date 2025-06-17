@@ -29,22 +29,37 @@ export default function LoginPage() {
   return (
     <div className={styles.container}>
       <form onSubmit={handleSubmit} className={styles.form}>
-        <input
-          className={styles.input}
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
+        <img
+          src="/mfa-logo.svg"
+          alt="Manitoba Foundation for the Arts logo"
+          className={styles.logo}
         />
-        <input
-          className={styles.input}
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
+        <div className={styles.field}>
+          <label htmlFor="email" className={styles.label}>
+            Email
+          </label>
+          <input
+            id="email"
+            className={styles.input}
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div className={styles.field}>
+          <label htmlFor="password" className={styles.label}>
+            Password
+          </label>
+          <input
+            id="password"
+            className={styles.input}
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
         <div className={styles.note}>
           Use at least 8 characters with 1 number, and one special character.
         </div>
