@@ -18,7 +18,7 @@ export default function SignUpPage() {
       return;
     }
     await signIn("credentials", { redirect: false, email, password });
-    router.push("/");
+    router.push("/table");
   };
 
   return (

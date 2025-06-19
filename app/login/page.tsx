@@ -20,7 +20,7 @@ export default function LoginPage() {
       password,
     });
     if (!res?.error) {
-      router.push("/");
+      router.push("/table");
     } else {
       alert("Invalid credentials");
     }
